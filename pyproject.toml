@@ -1,0 +1,56 @@
+[project]
+name = "js-to-json-logic"
+description = "Parse JavaScript expressions into JsonLogic-compatible objects."
+version = "0.1.0"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+
+authors = [
+    { name = "Chad Taylor", email = "chadtaylor@hey.com" }
+]
+
+keywords = [
+    "json-logic",
+    "javascript",
+    "parser",
+    "transformer",
+    "expression",
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: General",
+]
+
+requires-python = ">=3.14"
+
+dependencies = [
+    "esprima2>=5.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/tessellator/js-to-json-logic"
+Repository = "https://github.com/tessellator/js-to-json-logic"
+Issues = "https://github.com/tessellator/js-to-json-logic/issues"
+Changelog = "https://github.com/tessellator/js-to-json-logic/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "json-logic>=0.7.0a0",
+    "pytest>=9.0.2",
+    "ruff>=0.15.2",
+]
