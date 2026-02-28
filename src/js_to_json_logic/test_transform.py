@@ -79,31 +79,31 @@ def test_comparison_expression__lt():
     assert transform_js("a < 10") == {"<": [{"var": "a"}, 10]}
 
 
-def test_comparison_expresion__lte():
+def test_comparison_expression__lte():
     assert transform_js("a <= 10") == {"<=": [{"var": "a"}, 10]}
 
 
-def test_comparison_expresion__gt():
+def test_comparison_expression__gt():
     assert transform_js("a > 10") == {">": [{"var": "a"}, 10]}
 
 
-def test_comparison_expresion__gte():
+def test_comparison_expression__gte():
     assert transform_js("a >= 10") == {">=": [{"var": "a"}, 10]}
 
 
-def test_comparison_expresion__double_equal():
+def test_comparison_expression__double_equal():
     assert transform_js("a == 10") == {"==": [{"var": "a"}, 10]}
 
 
-def test_comparison_expresion__not_double_equal():
+def test_comparison_expression__not_double_equal():
     assert transform_js("a != 10") == {"!=": [{"var": "a"}, 10]}
 
 
-def test_comparison_expresion__triple_equal():
+def test_comparison_expression__triple_equal():
     assert transform_js("a === 10") == {"===": [{"var": "a"}, 10]}
 
 
-def test_comparison_expresion__not_triple_equal():
+def test_comparison_expression__not_triple_equal():
     assert transform_js("a !== 10") == {"!==": [{"var": "a"}, 10]}
 
 
